@@ -1,0 +1,73 @@
+<!-- value="Add a book..." 
+ --><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <title>Kald's Book Library</title>
+</head>
+
+<body> 
+
+    <main>
+    <div class="page-container">
+    <div id="content-wrap">
+    <div class="row">
+
+       <div class="card" id="main">
+        <div class="col s10 offset-s2 pull-s1" >
+            <h1 style="font-family: 'Roboto', sans-serif; font-weight: 300;">Kald's Book Store</h1>
+            
+            </div>
+           <div class="card-panel blue lighten-5 z-depth-0 border-radius 15px col s10 offset-s2 pull-s1" style="border-radius: 7px">
+
+            <form id="book-form">
+            <div class="col s12">
+                <h3 style="font-family: 'Roboto', sans-serif; font-weight: 300;">Add a book:</h3>
+            </div>
+            
+            <div class="input-field col s9">
+                <label for="bookName">Book's name: </label>
+                <input type="text" name="bookName" id="bName">
+            </div>
+            <br>
+            <div class="input-field col s9">
+                <label for="bookAuthor">Book's author: </label>
+                <input type="text" name="bookAuthor" id="bAuthor">
+            </div>
+            <br>
+            <div class="col s9">
+                <!-- <input type="button" class="btn-large teal waves-effect  z-depth-0 " value="Add Book"> -->
+                <a href="#" class="add-Book waves-effect waves-light btn-large teal">Add Book</a>
+                <a href="#" class="clear-tasks waves-effect waves-orange btn-large red">Clear the List</a>
+            </div>
+            <br><br>
+            <div class="card-panel blue lighten-5 z-depth-0 border-radius 15px col s12 offset-s1 pull-s1" style="border-radius: 7px">
+                <ul class="collection">
+                </ul>
+
+            </div>
+        </form>
+        </div>
+        </div> 
+    </div>
+</div>
+
+<footer class="page-footer black-text blue lighten-5">
+    <div class="footer-copyright black-text blue lighten-5">© 2020 Karl-Erik Kald. All Rights Reserved.</div>
+</footer>
+</div>
+</main>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
